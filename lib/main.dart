@@ -140,9 +140,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                      if (lcmlRoomDetailsMasterModel.mcFormKey.currentState!.validate()) {
                                         int adultCnt = int.parse(lcmlRoomDetailsMasterModel.mcAdultTextEditingCntrl.text);
                                          int childCnt = int.parse(lcmlRoomDetailsMasterModel.mcChildTextEditingCntrl.text);
-                                         addGuestDetailsFormFun(index,adultCnt,GuestType.adult);
-                                         addGuestDetailsFormFun(index,childCnt,GuestType.child);
-                                         setState(() {});
+                                         addGuestDetailsFormFun(index,adultCnt,GuestType.Adult);
+                                         addGuestDetailsFormFun(index,childCnt,GuestType.Child);
+                                         setState(() {
+
+                                         });
                                      }
                                     }catch(e){
                                      print(e);

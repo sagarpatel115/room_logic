@@ -33,8 +33,8 @@ class GuestDetailsModel{
 }
 
 enum GuestType{
-  adult,
-  child
+  Adult,
+  Child
 }
 
 extension GuestTypeName on GuestType {
